@@ -1,0 +1,27 @@
+body {
+max-width: 60em;
+margin: 0 auto 0 auto;
+
+background-color: #cdcdcd;
+/*note: this background color only shows up behind "The Tell-Tale Heart" instead of repeating the background image.*/
+background-image: url("../images/cloudy.jpg");
+/*image from vecteezy.com user doyandesign*/
+background-repeat: no-repeat;
+
+font-family: courier
+}
+
+h1 {
+	text-align: center;
+	}
+
+h2 {
+	background-color: #BC8F8F;
+	}
+
+table, th, td {
+border-collapse: collapse;
+border: 3px inset #000;
+padding: 1em;
+
+}
