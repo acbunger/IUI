@@ -1,0 +1,125 @@
+       	img		{ 
+			max-width: 100%;
+			float: left; /* YOU CAN FLOAT AN ELEMENT WITHIN A GRID AREA */
+			padding-right: 1em;
+			padding-bottom: 1em;
+		}
+		
+        header {
+            grid-area: header;
+            background-color: #990000;
+			font-family: Georgia, Times, Times New Roman, serif; 
+			color: #ffffff;
+			text-align: center;
+			padding-right: 2em;
+			padding-left: 2em;
+		
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #ffffff;
+			font-size: 1.5em;
+			font-family: Georgia, Times, Times New Roman, serif;
+			padding-right: .5em;
+			padding-left: .5em;
+			}
+
+        main {
+            grid-area: main;
+            background-color: #ffffff;
+			font-size: 100%;
+			font-family: Georgia, Times, Times New Roman, serif;
+			padding-right: .5em;
+			padding-left: .5em;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color:#FFF7F8;
+			font-family: Georgia, Times, Times New Roman, serif;
+			padding-right: 2em;
+			padding-left: 1em;
+			padding-bottom: 1em;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #ffffff;
+			font-family: Georgia, Times, Times New Roman, serif;
+			padding-right: .5em;
+			padding-left: .5em;
+			padding-bottom: 2em;
+        }
+
+        .grid-container {
+            display: grid;
+			
+            grid-template-areas:
+                'header header header header header header'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+                'nav nav footer footer footer footer';
+            grid-gap: 2em;
+           
+        }
+
+		.italic{
+			font-style: italic;
+		}
+
+        ul {
+            list-style-type: none;
+        }
+
+		
+        /*FIRST BREAK POINT === tablet */
+        @media only screen and (max-width : 1020px) {
+        
+		nav {
+			text-align: center;
+		}		
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'nav nav nav nav nav nav'
+					'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+				padding: 20px;
+			}
+
+        }
+
+
+        /*SECOND BREAK POINT === mobile */
+        @media only screen and (max-width : 850px) {
+
+		nav {
+			text-align: center;
+		}
+		
+           .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+					'header header header header header header'
+                    'aside aside aside aside aside aside'
+					'main main main main main main'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+				padding: 10px;
+			}
+
+        }
