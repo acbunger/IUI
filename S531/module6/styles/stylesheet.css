@@ -74,7 +74,7 @@
 
 		
         /*FIRST BREAK POINT === tablet */
-        @media only screen and (max-width : 1020px) {
+        @media only screen and (max-width : 1024px) {
         
 		nav {
 			text-align: center;
@@ -99,7 +99,7 @@
 
 
         /*SECOND BREAK POINT === mobile */
-        @media only screen and (max-width : 850px) {
+        @media only screen and (max-width : 828px) {
 
 		nav {
 			text-align: center;
