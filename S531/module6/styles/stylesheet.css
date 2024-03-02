@@ -68,9 +68,13 @@
 			font-style: italic;
 		}
 
-        ul {
+        ul.a {
             list-style-type: none;
         }
+
+	ul.b {
+		list-style-type: disc;
+	}
 
 		
         /*FIRST BREAK POINT === tablet */
@@ -90,7 +94,7 @@
                 padding: .5em;
             }
 
-            ul li {
+            ul.a li {
                 display: inline-block;
 				padding: 20px;
 			}
@@ -121,7 +125,7 @@
                 padding: .5em;
             }
 
-            ul li {
+            ul.a li {
                 display: inline-block;
 				padding: 10px;
 			}
