@@ -104,6 +104,10 @@
 		nav {
 			text-align: center;
 		}
+
+		aside {
+			padding-left:.5em;
+		}
 		
            .grid-container {
                 display: grid;
