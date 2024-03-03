@@ -21,8 +21,6 @@
             background-color: #ffffff;
 			font-size: 1.5em;
 			font-family: Georgia, Times, Times New Roman, serif;
-			padding-right: .5em;
-			padding-left: .5em;
 			}
 
         main {
@@ -96,7 +94,7 @@
 
             ul.a li {
                 display: inline-block;
-				padding: 20px;
+		padding-right: 20px;
 			}
 
         }
@@ -127,7 +125,7 @@
 
             ul.a li {
                 display: inline-block;
-				padding: 10px;
+		padding-right: 10px;
 			}
 
         }
